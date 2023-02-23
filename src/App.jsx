@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-
-
+import './App.css'
 const App = () => {
     const [count, setCount] = useState(0)
     const [user, setUser] = useState()
@@ -25,6 +24,32 @@ const App = () => {
                 <label>User: <input type="text" onChange={handleOnChangeUser} value={user} /></label>
                 <label>Password: <input type="password" onChange={handleOnChangePassword} value={password} /></label>
             </form>
+            <section className='main'>
+                <div className='card'>
+                    <h1>User Card</h1>
+                    <p>Name: RodProject</p>
+                    <p>Age: 31</p>
+                    <p>Gender: Male</p>
+                </div>
+                <div className='card'>
+                    <h1>User Card</h1>
+                    <p>Name: RodProject</p>
+                    <p>Age: 31</p>
+                    <p>Gender: Male</p>
+                </div>
+                <div className='card'>
+                    <h1>User Card</h1>
+                    <p>Name: RodProject</p>
+                    <p>Age: 31</p>
+                    <p>Gender: Male</p>
+                </div>
+                <div className='card'>
+                    <h1>User Card</h1>
+                    <p>Name: RodProject</p>
+                    <p>Age: 31</p>
+                    <p>Gender: Male</p>
+                </div>
+            </section>
         </>
     )
 }
