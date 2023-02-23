@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
+
 import './App.css'
+
+import Card from './Card'
 const App = () => {
     const [count, setCount] = useState(0)
     const [user, setUser] = useState()
@@ -24,32 +27,12 @@ const App = () => {
                 <label>User: <input type="text" onChange={handleOnChangeUser} value={user} /></label>
                 <label>Password: <input type="password" onChange={handleOnChangePassword} value={password} /></label>
             </form>
-            <section className='main'>
-                <div className='card'>
-                    <h1>User Card</h1>
-                    <p>Name: RodProject</p>
-                    <p>Age: 31</p>
-                    <p>Gender: Male</p>
-                </div>
-                <div className='card'>
-                    <h1>User Card</h1>
-                    <p>Name: RodProject</p>
-                    <p>Age: 31</p>
-                    <p>Gender: Male</p>
-                </div>
-                <div className='card'>
-                    <h1>User Card</h1>
-                    <p>Name: RodProject</p>
-                    <p>Age: 31</p>
-                    <p>Gender: Male</p>
-                </div>
-                <div className='card'>
-                    <h1>User Card</h1>
-                    <p>Name: RodProject</p>
-                    <p>Age: 31</p>
-                    <p>Gender: Male</p>
-                </div>
-            </section>
+            <div className='main'>
+                <Card title="Software Engineer" name="Rod-Invi" age={31} gender="Male"/>
+                <Card title="Frontend Developer" name="Rod-design" age={30} gender="Male"/>
+                <Card title="Backend Developer" name="Rod-occassion" age={3} gender="Female"/>
+                <Card title="Full Stack Developer" name="Rod-Invi" age={28} gender="Male"/>
+            </div>
         </>
     )
 }

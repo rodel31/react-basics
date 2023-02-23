@@ -15,12 +15,15 @@ body{
 .card{
     display: inline-block;
     text-align: left;
-    width: 10rem;
+    width: 12rem;
     height: 200px;
     background-color: aqua;
     margin: 25px 25px;
 }
 h1{
-    text-align: center;
-    margin-top: 1rem;
+    margin: 1rem 1.5rem;
+}
+p{
+    text-align: left;
+    margin: 10px 1.5rem;
 }
