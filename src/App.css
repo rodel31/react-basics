@@ -12,18 +12,23 @@ body{
     display: inline-block;
     text-align: center;
 }
-.card{
-    display: inline-block;
-    text-align: left;
-    width: 12rem;
-    height: 200px;
-    background-color: aqua;
-    margin: 25px 25px;
-}
-h1{
-    margin: 1rem 1.5rem;
-}
-p{
-    text-align: left;
-    margin: 10px 1.5rem;
-}
+    .card{
+        display: inline-block;
+        text-align: left;
+        width: 12rem;
+        height: 250px;
+        background-color: aqua;
+        margin: 25px 25px;
+        border: 1px solid black;
+    }
+        h1{
+            margin: 1rem 1.5rem;
+        }
+        p{
+            text-align: left;
+            margin: 10px 1.5rem;
+        }
+        div > button,p{
+            margin: 10px 1.5rem;
+            display: inline-block;
+        }
